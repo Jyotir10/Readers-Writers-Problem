@@ -1,0 +1,31 @@
+Part A)
+Program to reverse a Linked List of a very large size without getting Stack Over Flow error.
+Reverse a singly linked list 
+
+struct foo { 
+int value; 
+struct foo * next; 
+}; 
+
+Implement the following function: 
+
+struct foo * reverse(struct foo * input) { 
+// Your code here 
+}; 
+
+Given an singly linked list, reverse() will reverse the linked list. For example, if there were two structs in the original linked list with values 1 & 2, upon calling reverse, you will 2 & 1 if you traverse it. 
+
+Part B)
+Reader/Writer Locks 
+
+A multi-threaded program would like to increase concurrency by implementing reader/writer locks instead of just lock/unlock functionality. Threads that want to just read the object would call read_lock()/read_unlock(). There can obviously be multiple readers active at any point, but there can only be one and only one writer accessing the object at any given time.  
+
+A multi-threaded program would like to increase concurrency by implementing reader/writer locks instead of just lock/unlock functionality. Threads that want to just read the object would call read_lock()/read_unlock(). There can obviously be multiple readers active at any point, but there can only be one and only one writer accessing the object at any given time.
+
+Assumptions 
+There are a large number of threads Most of the threads are readers  Writers must not be starved.
+ 
+Problem 
+Define data structures  Implement functions (including parameters etc)that will implement read_lock(), read_unlock(), write_lock(), write_unlock()  Use your favorite programming language. 
+
+
